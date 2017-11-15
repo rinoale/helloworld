@@ -1,0 +1,24 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "taskName": "echo",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-o","result",
+                "-g","directx.cpp",
+                "-I","\"C:\\Program Files (x86)\\Microsoft DirectX SDK (June 2010)\\Include\"",
+                "-L","\"C:\\Program Files (x86)\\Microsoft DirectX SDK (June 2010)\\Lib\"",
+                "-D","UNICODE",
+                "-l","d3d9" 
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
